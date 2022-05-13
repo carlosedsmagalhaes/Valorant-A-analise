@@ -1,0 +1,145 @@
+:root{
+    --cor-primaria: #1C1E21;
+    --cor-secundaria: #FF2B52;
+    --cor-terciaria: #F2F2F2;
+    --cor-quternaria: #81868A;
+}
+
+*{
+    box-sizing: border-box;
+    color: var(--cor-terciaria);
+}
+
+.conteudo::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+@font-face {
+    font-family: Valorant;
+    src: url(C:\Users\User\Desktop\treino_desenvolvimento_web\font);
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+.menu{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    padding: 0px;
+    background-color: var(--cor-secundaria);
+}
+
+.menu li{
+    list-style: none;
+}
+
+#title{
+    color: var(--cor-secundaria);
+    font-family: Valorant, Times, 'Odibee Sans', cursive;
+    text-align: center;
+}
+
+body{
+    padding-top: 70px;
+    background-color: var(--cor-primaria);
+}
+
+.conteudo{
+    font-family: Times, 'Odibee Sans', cursive;
+    text-align: justify;
+    padding-bottom: 70px;
+}
+
+#spray{
+    float: right;
+}
+
+/* Botão */
+#btn{
+    text-align: center;
+}
+
+.botao{
+    border: none;
+    padding: 10px;
+    background-color: var(--cor-secundaria);
+    font-family: Valorant, Times, 'Odibee Sans', cursive;;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color .3s;
+}
+
+.botao:active,
+.botao:hover{
+     background-color: var(--cor-primaria);
+     color: var(--cor-secundaria);
+     border: 1px solid var(--cor-secundaria);
+     text-decoration: underline;
+}
+/*  */
+
+.rodape{
+    background-color: var(--cor-quternaria);
+    left: 0px;
+    bottom: 0px;
+    position: fixed;
+    padding: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rodape p{
+    color: var(--cor-primaria);
+}
+
+@media only screen and (min-width: 360px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media only screen and (max-width: 600px){
+    /* Retirando a imagem do conteúdo */
+    #spray{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    #title{
+        font-size: 35px;
+    }
+} 
